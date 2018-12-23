@@ -1,10 +1,12 @@
 // require express, path, and burger module
 var express = require('express');
-var burger = require('../models/burger.js');
 var path = require('path');
 
 // set up express router
 var router = express.Router();
+
+// import burger.js to use database funvctions
+var burger = require('../models/burger.js');
 
 // defining paths
 router.get("/", function(req, res) {
