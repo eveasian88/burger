@@ -1,5 +1,5 @@
 // require connection module
-var connection = require("./connection.js");
+var connection = require("../config/connection.js");
 
 // define orm object
 var orm = {

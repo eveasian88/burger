@@ -10,7 +10,7 @@
                 </input>
                 <br>
                 <input type="submit" id="submit-burger">
-                <p>Enter the burger that you are wanting to eat and click the 'Submit' button.</p>
+                <p>Enter the burger that you want to eat and click the 'Submit' button.</p>
 
             </div>
         </div>
@@ -45,3 +45,43 @@
         </div>
     </div>
 </section>
+
+
+{{!-- <script type="text/javascript">
+$( document ).ready(function() {
+  $('#submit-burger').on('click',function(event){
+    event.preventDefault();
+    var newBurger = {
+        burger_name: $('#type-burger').val().trim(),
+        devoured : false
+    }
+    $.ajax('/api/burgers',{
+    type:'POST',
+    data: newBurger
+    }).then(
+    function(){
+      console.log('created new burger');
+
+      location.reload();
+    });
+  })
+
+  $('.devour-btn').on('click',function(event){
+    var id = $(this).data('id');
+
+    var newDevour = {
+      devoured: true
+    };
+    console.log(id);
+    
+    $.ajax('/api/burgers/'+id,{
+      type: 'PUT',
+      data: newDevour
+    }).then(
+      function(){
+        console.log('devoured',id);
+        location.reload();
+      });
+  });
+});
+</script> --}}
