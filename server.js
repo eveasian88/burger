@@ -2,8 +2,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mysql = require("mysql");
-var path = require('path');
-var morgan = require('morgan');
+var path = require("path");
+var morgan = require("morgan");
 
 // creating an express app instance
 var app = express();
