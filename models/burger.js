@@ -7,12 +7,12 @@ var burger = {
         });
     },
     insertOne: function(val_one, val_two, cb){
-        orm.insertOne('burgers', 'burger_name','devoured', val_one, val_two, function(res){
+        orm.insertOne('burgers', 'burger_name', 'devoured', val_one, val_two, function(res){
             cb(res);
         });
     },
     updateOne: function(objColVals, condition, cb){
-        orm.updateOne('burgers',objColVals,condition, function(res){
+        orm.updateOne('burgers', objColVals, condition, function(res){
             cb(res);
         });
     },

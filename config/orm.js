@@ -13,7 +13,7 @@ var orm = {
       });
     },
     // insert row into database with specified data
-    insertOne: function(table, col_one,col_two, val_one, val_two, cb) {
+    insertOne: function(table, col_one, col_two, val_one, val_two, cb) {
       var queryString = "INSERT INTO ?? (??,??) VALUES (?,?)";
       connection.query(queryString, [table, col_one,col_two, val_one, val_two], function(err, result) {
         if (err) throw err;

@@ -3,6 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mysql = require("mysql");
 var path = require('path');
+var morgan = require('morgan');
 
 // creating an express app instance
 var app = express();
@@ -16,7 +17,7 @@ app.use(express.static("public"));
 // parse request body as JSON
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use(morgan("dev"));
 
 // set handlebars
 var exphbs = require("express-handlebars");

@@ -14,19 +14,22 @@ router.get("/", function(req, res) {
         var hbObject = {
             burgers : data
         };
-        console.log(hbObject);
+        // console.log(' GET ROUTE :: ', hbObject);
         res.render("index", hbObject);
     });
 });
 
 router.post("/api/burgers", function(req, res) {
-    burger.insertOne(req.body.burger_name,'false',function(result){
+    console.log("request.body", req.body);
+
+    burger.insertOne(req.body.burger_name, false, function(result){
+        console.log('result :: ', result);
         res.json({ id: result.insertId });
     });
 });
 
 router.delete("/api/burgers/:id", function(req, res) {
-    var condition = 'id = ' +req.params.id; 
+    var condition = 'id = ' + req.params.id; 
     connection.query("DELETE FROM burgers WHERE id = ?", [req.params.id], function(err, result) {
       if (err) {
         // if error, send generic server failure
