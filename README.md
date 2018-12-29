@@ -31,4 +31,4 @@
 
 ## Author
 
-- Susye Weng-Reeder - *JavaScript/ Node.js/ Express* - [Susye Weng-Reeder](https://eveasian88.github.io/Professional-Portfolio/ "Susye's Portfolio")
+- Susye Weng-Reeder - *JavaScript/ Node.js/ Express/ MySQL* - [Susye Weng-Reeder](https://eveasian88.github.io/Professional-Portfolio/ "Susye's Portfolio")
