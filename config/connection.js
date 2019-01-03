@@ -13,6 +13,7 @@ if (process.env.JAWSDB_URL) {
     database: "burgers_db"
   });
 
+  // mysql://hgj6br7gjurrluws:qb7nx85zha4ons40@nj5rh9gto1v5n05t.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/xkpvztxr6wp5tkjv
 
 // establish connection
 connection.connect(function (err) {
