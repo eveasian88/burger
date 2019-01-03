@@ -1,6 +1,7 @@
 # burger
 
-[The-Burger-Bar](https://hidden-hollows-63563.herokuapp.com/) is a Burger Ordering App using Node.js and Express Web Frameworks, Handlebars and a homemade ORM. Users can order new burgers in the input field and then "eat them". The App logs all burgers ordered and eaten. It uses MySQL to query and route data to the App and Handlebars to generate the HTML. 
+[The-Burger-Bar]
+(https://hidden-hollows-63563.herokuapp.com/) is a Burger Ordering App using Node.js and Express Web Frameworks, Handlebars and a homemade ORM. Users can order new burgers in the input field and then "eat them". The App logs all burgers ordered and eaten. It uses MySQL to query and route data to the App and Handlebars to generate the HTML. 
  
 
 
