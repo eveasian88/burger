@@ -47,7 +47,9 @@ button{
     background-color: seashell;
 }
   
-
+p {
+    color: black;
+}
 
 /******** media queries ******/
 /********** xs < 768 *********/
