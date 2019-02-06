@@ -23,7 +23,7 @@
 - JavaScript
     - Node.js
         - Express
-        - Body-Parser
+        - Express-handlebars
         - MySQL
         - Morgan
         - Nodemon
